@@ -1,9 +1,12 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  content: ['./index.html'],
+  content: ['./index.html', './index.js'],
   theme: {
     extend: {
+      boxShadow: {
+        'advice-btn': '0 0 40px hsl(150deg 100% 66%)',
+      },
       colors: {
         blue: {
           grayish: 'hsl(217, 19%, 38%)',
